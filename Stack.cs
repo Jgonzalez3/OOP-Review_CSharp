@@ -13,6 +13,9 @@ namespace OOP
         public void Pop(){
             _list.RemoveAt(_list.Count-1);
         }
+        public void ClearStack(){
+            _list.Clear();
+        }
 
     }
     public class Node{

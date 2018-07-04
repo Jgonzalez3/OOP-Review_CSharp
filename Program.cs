@@ -29,6 +29,15 @@ namespace OOP
             
             var dbMigrator = new DbMigrator(new FileLogger("C:\\Documents\\CodingDojo\\Bootcamp\\C#\\log.txt"));//Logs are stored at this path.
             dbMigrator.Migrate();
+
+            WorkFlow WorkFlow = new WorkFlow();
+            WorkFlow.Add(new VideoUploader());
+            WorkFlow.Add(new CallWebService());
+            WorkFlow.Add(new SendEmail());
+            WorkFlow.Add(new ChangeStatus());
+
+            var engine  = new WorkFlowEngine();
+            engine.Run(WorkFlow);
         }
 
         public static IWebHostBuilder CreateWebHostBuilder(string[] args) =>

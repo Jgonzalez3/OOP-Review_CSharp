@@ -46,7 +46,7 @@ namespace OOP{
     }
     //Take A look below: Access modifier of class must match access modifier of the interface using if not implemented by class, if none don't use any.
     public class WorkFlowEngine{
-        public void Run(IWorkFlow workFlow{
+        public void Run(IWorkFlow workFlow){
             foreach(ITask I in workFlow.GetTasks()){
                 try{
                     I.Execute();

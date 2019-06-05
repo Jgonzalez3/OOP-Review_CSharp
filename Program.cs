@@ -27,8 +27,9 @@ namespace OOP
             myPost.VoteDown();
             myPost.DisplayVotes();
             
-            var dbMigrator = new DbMigrator(new FileLogger("C:\\Documents\\CodingDojo\\Bootcamp\\C#\\log.txt"));//Logs are stored at this path.
-            dbMigrator.Migrate();
+            //var dbMigrator = new DbMigrator(new FileLogger("C:\\Documents\\CodingDojo\\Bootcamp\\C#\\OOP\\log.txt"));
+            //Logs are stored at this path.
+            //dbMigrator.Migrate();
 
             WorkFlow WorkFlow = new WorkFlow();
             WorkFlow.Add(new VideoUploader());
@@ -38,6 +39,9 @@ namespace OOP
 
             var engine  = new WorkFlowEngine();
             engine.Run(WorkFlow);
+
+            List<object> tList = new List<object>();
+            tList.Add("Javier");
         }
 
         public static IWebHostBuilder CreateWebHostBuilder(string[] args) =>

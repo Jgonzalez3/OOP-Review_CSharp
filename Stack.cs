@@ -16,7 +16,6 @@ namespace OOP
         public void ClearStack(){
             _list.Clear();
         }
-        //
 
     }
     public class Node{

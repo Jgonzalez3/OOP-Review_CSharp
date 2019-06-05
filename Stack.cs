@@ -16,7 +16,10 @@ namespace OOP
         public void ClearStack(){
             _list.Clear();
         }
+<<<<<<< HEAD
         //test commit 2
+=======
+>>>>>>> subTest2
 
     }
     public class Node{

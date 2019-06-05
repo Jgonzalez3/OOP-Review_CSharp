@@ -6,7 +6,7 @@ namespace OOP
     public class Stack
     {
         private List<Node> _list = new List<Node>();
-        public Stack(){};
+        public Stack(){}
         public void Push(Node node){
             _list.Add(node);
         }
@@ -19,10 +19,10 @@ namespace OOP
 
     }
     public class Node{
-        private readonly val;
-        public Node(val)
+        private readonly int _val;
+        public Node(int _val)
         {
-            this.val = val;
+            this._val = _val;
         }
     }
 }
